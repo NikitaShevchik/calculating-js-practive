@@ -84,6 +84,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
+.title {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.button {
+  font-size: 20px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #ffc400;
+}
+
+.number {
+  border: 1px solid #000;
+  padding: 5px 0;
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.square {
+  padding: 50px 0;
+}
+
 .square__input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,25 +122,26 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
 }
 
-.square__title {
-  text-align: center;
-  line-height: 1.5;
+.rectangle__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.square__button {
-  font-size: 20px;
-  padding: 7px 14px;
-  border-radius: 5px;
-  margin: 10px 0;
-  background-color: #ffc400;
+.rectangle__get {
+  padding: 10px 0;
 }
 
-.square__number {
-  border: 1px solid #000;
-  padding: 5px 0;
-  font-size: 20px;
-  margin: 10px 0;
+.rectangle__subtitle {
   text-align: center;
+  font-size: 14px;
 }
 
 input[type=number]::-webkit-inner-spin-button,

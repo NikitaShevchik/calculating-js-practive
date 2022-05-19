@@ -2,15 +2,27 @@
 
 /*--------SQUARE--------*/
 
-const buttonGetResult = document.querySelector(".square__button");
-const getFromInput = document.querySelector(".square__number");
-const resultPerimetr = document.querySelector(".square__perimetr");
-const resultArea = document.querySelector(".square__area");
+const buttonGetResultSquare = document.querySelector(".square__button");
+const getFromInputSquare = document.querySelector(".square__number");
+const resultPerimetrSquare = document.querySelector(".square__perimetr");
+const resultAreaSquare = document.querySelector(".square__area");
 
-buttonGetResult.addEventListener("click", function (e) {
-    var getSide = getFromInput.value;
-    resultPerimetr.innerHTML = `${getSide * 4}`;
-    resultArea.innerHTML = `${getSide * getSide}`;
+buttonGetResultSquare.addEventListener("click", function (e) {
+    var getSide = getFromInputSquare.value;
+    resultPerimetrSquare.innerHTML = `${getSide * 4}`;
+    resultAreaSquare.innerHTML = `${getSide * getSide}`;
 });
 
-/*--------SQUARE--------*/
+/*--------RECTANGLE--------*/
+const buttonGetResultRectangle = document.querySelector(".rectangle__button");
+const getFromInputRectangleFirst = document.querySelector(".rectangle__number_1");
+const getFromInputRectangleSecond = document.querySelector(".rectangle__number_2");
+const resultPerimetrRectangle = document.querySelector(".rectangle__perimetr");
+const resultAreaRectangle = document.querySelector(".rectangle__area");
+
+buttonGetResultRectangle.addEventListener("click", function (e) {
+    var getSideFirst = getFromInputRectangleFirst.value;
+    var getSideSecond = getFromInputRectangleSecond.value;
+    resultPerimetrRectangle.innerHTML = `${(getSideFirst * 2) + (getSideSecond * 2)}`;
+    resultAreaRectangle.innerHTML = `${getSideFirst * getSideSecond}`;
+});

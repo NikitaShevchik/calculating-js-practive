@@ -11,46 +11,70 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.title{
+    text-align: center;
+    line-height: 1.5;
+}
+.button{
+    font-size: 20px;
+    padding: 7px 14px;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: rgb(255, 196, 0);
+}
+.number{
+    border: 1px solid #000;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
 .square {
+    padding: 50px 0;
 		&__input {
             display: flex;
             flex-direction: column;
             align-items: center;
 		}
 
-		&__title {
-            text-align: center;
-            line-height: 1.5;
-		}
-
-		&__button {
-            font-size: 20px;
-            padding: 7px 14px;
-            border-radius: 5px;
-            margin: 10px 0;
-            background-color: rgb(255, 196, 0);
-		}
-
-        &__number{
-            border: 1px solid #000;
-            padding: 5px 0;
-            font-size: 20px;
-            margin: 10px 0;
-            text-align: center;
-        }
-
-		&__output {
-
-		}
-        &__get{
-
-        }
-		&__perimetr {
-		}
-
-		&__area {
-		}
 }
+
+.rectangle {
+    &__input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+    }
+
+    &__get {
+        padding: 10px 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &__number {
+    }
+
+    &__button {
+    }
+
+    &__output {
+    }
+
+    &__perimetr {
+    }
+
+    &__area {
+    }
+}
+
 
 
 
