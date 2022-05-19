@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!-- Кодировка страницы -->
 	<meta charset="UTF-8">
 	<!-- Заголовок страницы в браузере -->
-	<title>NAME</title>
+	<title>Калькулятор фигур</title>
 	<!-- Подключение CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Адаптив -->
@@ -12,14 +13,32 @@
 	<!-- Фавикон -->
 	<link rel="shortcut icon" href="">
 </head>
-<!-- Отображаемое тело страницы -->
-	<body>
-		<!-- Оболочка для демонстрации -->
-		<div class="wrapper">
-			<!-- Контент -->
-			<div class="content">
-				
+
+<body>
+	<main class="main">
+		<div class="content">
+			<div class="square">
+				<div class="square__input">
+					<div class="square__title">
+						<p>Введите сторону квадрата</p>
+					</div>
+					<div class="square__get">
+						<input type="number" class="square__number">
+					</div>
+					<button class="square__button">
+						Подсчитать
+					</button>
+				</div>
+				<div class="square__output">
+					<div class="square__title">
+						<p>Периметр квадрата: <span class="square__perimetr"></span></p>
+						<p>Площадь квадрата: <span class="square__area"></span></p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</body>
+	</main>
+	<script src="js/scrypt.js"></script>
+</body>
+
 </html>
