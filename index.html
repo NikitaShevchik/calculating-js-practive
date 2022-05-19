@@ -18,7 +18,7 @@
 	<main class="main">
 		<div class="content">
 			<div class="square">
-				<div class="square__input">
+				<div class="square__input flex">
 					<div class="square__title title">
 						<p>Введите сторону квадрата</p>
 					</div>
@@ -37,18 +37,18 @@
 				</div>
 			</div>
 			<div class="rectangle">
-				<div class="rectangle__input">
+				<div class="rectangle__input flex">
 					<div class="rectangle__title title">
 						<p>Введите стороны прямоугольника</p>
 					</div>
-					<div class="rectangle__get">
-						<div class="rectangle__subtitle">
+					<div class="rectangle__get get">
+						<div class="rectangle__subtitle subtitle">
 							<p>1я сторона</p>
 						</div>
 						<input type="number" class="rectangle__number_1 number">
 					</div>
-					<div class="rectangle__get">
-						<div class="rectangle__subtitle">
+					<div class="rectangle__get get">
+						<div class="rectangle__subtitle subtitle">
 							<p>2я сторона</p>
 						</div>
 						<input type="number" class="rectangle__number_2 number">
@@ -61,6 +61,58 @@
 					<div class="rectangle__title title">
 						<p>Периметр прямоугольника: <span class="rectangle__perimetr"></span></p>
 						<p>Площадь прямоугольника: <span class="rectangle__area"></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="circle">
+				<div class="circle__input flex">
+					<div class="circle__title title">
+						<p>Введите радиус круга</p>
+					</div>
+					<div class="circle__get">
+						<input type="number" class="circle__number number">
+					</div>
+					<button class="circle__button button">
+						Подсчитать
+					</button>
+				</div>
+				<div class="circle__output">
+					<div class="circle__title title">
+						<p>Длинна окружности: <span class="circle__circumference"></span></p>
+						<p>Площадь круга: <span class="circle__area"></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="triangle">
+				<div class="triangle__input flex">
+					<div class="triangle__title title">
+						<p>Введите стороны треугольника</p>
+					</div>
+					<div class="triangle__get get">
+						<div class="triangle__subtitle subtitle">
+							<p>1я сторона</p>
+						</div>
+						<input type="number" class="triangle__number_1 number">
+					</div>
+					<div class="triangle__get get">
+						<div class="triangle__subtitle subtitle">
+							<p>2я сторона</p>
+						</div>
+						<input type="number" class="triangle__number_2 number">
+					</div>
+					<div class="triangle__get get">
+						<div class="triangle__subtitle subtitle">
+							<p>3я сторона</p>
+						</div>
+						<input type="number" class="triangle__number_3 number">
+					</div>
+					<button class="triangle__button button">
+						Подсчитать
+					</button>
+				</div>
+				<div class="triangle__output">
+					<div class="triangle__title title">
+						<p>Площадь треугольника: <span class="triangle__area"></span></p>
 					</div>
 				</div>
 			</div>

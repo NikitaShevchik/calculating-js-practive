@@ -3,6 +3,22 @@
 // Подключение шрифтов
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 //SCSS
+
+@mixin topline {
+    position: relative;
+    padding-top: 50px;
+    &:before{
+        content: "";
+        width: 700px;
+        height: 1px;
+        background-color: rgba(51, 51, 51, 0.2);
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
 .main {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -10,6 +26,7 @@
 .content {
     max-width: 1000px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 .title{
     text-align: center;
@@ -29,51 +46,41 @@
     margin: 10px 0;
     text-align: center;
 }
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.subtitle{
+    text-align: center;
+    font-size: 14px;
+}
+.get{
+    padding: 10px 0;
+}
 .square {
-    padding: 50px 0;
-		&__input {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-		}
-
+    padding-top: 50px;
 }
 
 .rectangle {
-    &__input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    &__title {
-    }
-
-    &__get {
-        padding: 10px 0;
-    }
-
-    &__subtitle {
-        text-align: center;
-        font-size: 14px;
-    }
-
-    &__number {
-    }
-
-    &__button {
-    }
-
-    &__output {
-    }
-
-    &__perimetr {
-    }
-
-    &__area {
-    }
+    @include topline();
 }
+
+.circle {
+    @include topline();
+}
+
+.triangle {
+    @include topline();
+}
+
+
+
+
+
+
+
 
 
 
